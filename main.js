@@ -3,22 +3,20 @@ $(document).ready( function(){
 	let author = '';
 	function  getQuote(){
 		$.get('https://talaikis.com/api/quotes/random/', function(response){ 
-		text = "--"+ response.quote;
-		author = response.author;
-     	$("#quote").html(response.quote);
-     	$("#author").html("--"+response.author);
+		text =  response.quote;
+		author = "--"+ response.author;
+     	$("#quote").html(text);
+     	$("#author").html(author);
      	});
 	}
-
-			
-	//$("#tweet").attr('href', 'https://twitter.com/intent/tweet?hashtags=quotes/&related=freecodecamp&text=' + encodeURIComponent('"' + text + '" ' + author));
-	$("#tweet").attr("href", 'https://twitter.com/intent/tweet?text=' + text);
+  function  tweet(){
+    //$("#tweet").attr("href", 'https://twitter.com/intent/tweet?text=' + text);
+    	$("#tweet").attr('href', 'https://twitter.com/intent/tweet?hashtags=jsForLife&related=freecodecamp&text=' + encodeURIComponent('"' + text + '" ' + author));
+  }
 
 	getQuote();
 
 	$("#random").click(getQuote);
-	//$("#tweet").click(tweet);
+  $("#tweet").click(tweet);
 
-	
-	
 });

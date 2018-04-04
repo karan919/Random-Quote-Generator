@@ -1,19 +1,34 @@
+body{
+	background: url(gear.jpg) no-repeat center fixed;
+	background-size: cover;
+	
+}
+h1{
+	text-align:center;
+	color:white;
+	font-size: 50px;
+	font-family: Comic Sans MS;
+}
+
 #box{
 	margin-top: 10vw;
 	margin-left: auto;
 	margin-right: auto;
 	height: 20%;
 	width: 500px;
-	background-color: grey;
+	background-color: #895334;
 	padding: 35px;
 	color:white;
 	box-shadow: 2px 2px 8px black;
+
 	
 }
 q{
 	display: block;
 	text-align: justify;
 	font-size: 20px;
+	z-index:1;
+
 }
 #author{
 	float: right;
@@ -31,10 +46,20 @@ button {
 
 button:hover {background-color: #3e8e35;}
 
-button:active {background-color: #4CAF50;}
+button:active {background-color: DodgerBlue;}
 
 .space{
 	display: block;
 	
 	margin-top: 100px;
 }
+#tweet{
+  background-color: #4CAF50;
+  border-radius:50%;
+  padding: 10px;
+  box-shadow: 2px 2px 8px black;
+  color:white;
+}
+#tweet:hover {background-color: #3e8e35;}
+
+#tweet:active {background-color: DodgerBlue;}
