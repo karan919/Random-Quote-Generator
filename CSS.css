@@ -2,7 +2,7 @@
 	margin-top: 10vw;
 	margin-left: auto;
 	margin-right: auto;
-	height: 200px;
+	height: 20%;
 	width: 500px;
 	background-color: grey;
 	padding: 35px;
@@ -14,6 +14,9 @@ q{
 	display: block;
 	text-align: justify;
 	font-size: 20px;
+}
+#author{
+	float: right;
 }
 #random{
 	float: right;
