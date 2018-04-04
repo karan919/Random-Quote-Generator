@@ -1,7 +1,7 @@
  $(document).ready(function() {
     $("#random").on("click", function(){
 
-      $("#demo").html("Here is the message");
+      $("#quote").html("Here is the message");
 
     });
   });
