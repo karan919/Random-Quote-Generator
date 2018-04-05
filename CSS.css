@@ -1,13 +1,13 @@
 body{
 	background: url(gear.jpg) no-repeat center fixed;
 	background-size: cover;
-	
+
 }
 h1{
 	text-align:center;
 	color:white;
 	font-size: 50px;
-	font-family: Comic Sans MS;
+	font-family: Arial Black;
 }
 
 #box{
@@ -20,6 +20,7 @@ h1{
 	padding: 35px;
 	color:white;
 	box-shadow: 2px 2px 8px black;
+	font-family: Verdana;
 
 	
 }
