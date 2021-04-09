@@ -208,13 +208,17 @@ const quotesList = {
 ]
 }
 
-document.getElementById("random").addEventListener("click", displayQuote);
 
-function displayQuote() {
-  const num = Math.floor(Math.random() * 103);
-  const Q = quotesList.quotes[num];
-  
-  document.getElementById("quote").innerHTML = Q.quote;
-  document.getElementById("author").innerHTML ="-- " +Q.author;
+
+window.onload=function(){
+       document.getElementById("random").addEventListener("click", displayQuote);
+
+       function displayQuote() {
+       const num = Math.floor(Math.random() * 103);
+       const Q = quotesList.quotes[num];
+
+       document.getElementById("quote").innerHTML = Q.quote;
+       document.getElementById("author").innerHTML ="-- " +Q.author;
+       }
+       displayQuote();
 }
-displayQuote();
